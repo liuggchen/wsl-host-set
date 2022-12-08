@@ -19,6 +19,7 @@ const domainFile = "wsl_domain.conf"
 func init() {
 	if l := len(os.Args); l > 1 && isHelpArg(os.Args[1]) {
 		fmt.Printf(`设置wsl的IP到windows宿主机的hosts文件中的小工具
+https://github.com/liuggchen/wsl-host-set
 
 使用方法：
 	方法1：将需要配置的域名写入到同目录的 %s 文件中，运行将自动按行读取
